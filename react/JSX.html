@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 리액트 -->
+  <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+  <!-- 바벨 -->
+  <script src=" https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <div id="root"></div>
+  <script type="text/babel">
+    const rootElement = document.getElementById('root');
+
+    // 엘레먼트 생성
+    // 바닐라 JS
+    // const elementV = document.createElement('h1');
+    // elementV.textContent = 'Hello, world!';
+
+    // 리액트
+    // const element = React.createElement('h1', {  children: 'Hello, world!' });
+
+    // createElement(element, props, children)
+    // const element = React.createElement(
+    //   'h1', 
+    //   {
+    //     className: 'title'
+    //   }, 
+    //   ['hello', " it's me!"]
+    // );
+    
+    // JSX 이것을 브라우저가 읽을 수 있게 자바스크립트로 변환해주려면 babel이 필요하다.
+    // JSX: React.createElement 표현식
+    // 바벨: 자바스크립트 컴파일러
+    const text = "hello, it's me!";
+    // const customH1 = <h1 className="title">{text}</h1>
+    // spread연산자도 사용 가능
+    const props = { className: 'title', children: text }
+    const customH1 = <h1 {...props} />
+    const element = customH1;
+
+    // console.log(element);
+    // console.log(elementV);
+
+    // 렌더
+    // 바닐라 JS
+    // rootElement.appendChild(element);
+
+    // 리액트
+    ReactDOM.render(element, rootElement);
+  </script>
+</body>
+</html>
