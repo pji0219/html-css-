@@ -12,33 +12,22 @@
   <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
   <!-- 바벨 -->
   <script src=" https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
   <div id="root"></div>
+
   <script type="text/babel">
     const rootElement = document.getElementById('root');
 
-    // 멀티 엘레먼트 생성
-    // const element = (
-    //   <>
-    //     <h1>Hi</h1>
-    //     <h3>Bye</h3>
-    //   </>
-    // )
-
-    // 엘레먼트 찍어내기
-    const Paint = ({ title, descripction }) => {
-      return (
-        <>
-          <h1>{title}</h1>
-          <h3>{descripction}</h3>
-        </>
-      );
+    // js jsx 섞어 쓰기
+    function Number({ number, selcted }) {
+      return selcted ? <h1>{number}</h1> : <h3>{number}</h3>;
     }
+
+    const number = [1,2,3,4,5,6,7,8,9,10];
 
     const element = (
       <>
-        <Paint title='Good' descripction='good' />
-        <Paint title='Bad' descripction='bad' />
-        <Paint title='So so' descripction='so so' />
+        {number.map(num => (<Number number={num} selcted={num === 3} />))}
       </>
     )
 
