@@ -27,7 +27,13 @@
 
     const element = (
       <>
-        {number.map(num => (<Number number={num} selcted={num === 3} />))}
+        {number.map(num => (
+          <Number 
+            key={num}
+            number={num} 
+            selcted={num === 3} 
+          />
+        ))}
       </>
     )
 
