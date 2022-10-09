@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="kor">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>맥주</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/menu1_common.css" />
+
+    <!-- FONTAWESOME -->
+    <script
+      src="https://kit.fontawesome.com/82579c42bb.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- GREEN SAP -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"
+      integrity="sha512-VEBjfxWUOyzl0bAwh4gdLEaQyDYPvLrZql3pw1ifgb6fhEvZl9iDDehwHZ+dsMzA0Jfww8Xt7COSZuJ/slxc4Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
+      integrity="sha512-v8B8T8l8JiiJRGomPd2k+bPS98RWBLGChFMJbK1hmHiDHYq0EjdQl20LyWeIs+MGRLTWBycJGEGAjKkEtd7w5Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- JS -->
+    <script defer src="./js/menu1.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="inner">
+        <!-- LOGO -->
+        <a href="./index.html" class="logo">
+          <img src="./src/img/logo3.png" alt="logo" />
+        </a>
+
+        <!-- HEADER -->
+        <header>
+          <ul class="menu">
+            <li><a href="./menu1_beer.html">맥주</a></li>
+            <li><a href="./menu1_wine.html">와인</a></li>
+            <li><a href="./menu1_tradition.html">전통주</a></li>
+            <li><a href="./menu2.html">우리들의 추천</a></li>
+          </ul>
+        </header>
+
+        <!-- TITLE -->
+        <h1 class="site_title">맥주</h1>
+
+        <!-- ICONS -->
+        <a href="#" class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </a>
+        <a href="#" class="heart">
+          <i class="fa-solid fa-heart"></i>
+        </a>
+
+        <!-- ALCOHOL LIST -->
+        <section class="alcohols">
+          <ul class="alcohol__list">
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer1.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">카스</h3>
+                  <span class="price">￦1650원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 오비맥주
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer2.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">클라우드</h3>
+                  <span class="price">￦1420원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 롯데칠성
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer3.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">문라이트</h3>
+                  <span class="price">￦2400원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 9.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 비어컴퍼니
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer4.png"
+                  class="alcohol_img"
+                  alt="막걸리"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">불락 스타우트</h3>
+                  <span class="price">￦2000원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 9%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 비어컴퍼니
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer5.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">영동고제</h3>
+                  <span class="price">￦1200원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.6%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 배배양조
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer6.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">클라우드 드래프트</h3>
+                  <span class="price">￦1350원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 롯데칠성
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer7.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">피츠 수퍼클리어</h3>
+                  <span class="price">￦1800원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 롯데칠성
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer8.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">한맥</h3>
+                  <span class="price">￦1430원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.6%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 오비맥주
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img src="./src/img/beer9.png" class="alcohol_img" alt="맥주" />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">필굿 오리지널</h3>
+                  <span class="price">￦2000원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 오비맥주
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer10.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">필굿 세븐</h3>
+                  <span class="price">￦2200원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 오비맥주
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer11.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">OB라거</h3>
+                  <span class="price">￦1450원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.6%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 오비맥주
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer12.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">UF라이스에일</h3>
+                  <span class="price">￦1600원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 5.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 생극양조
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer13.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">카프리</h3>
+                  <span class="price">￦1350원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4.2%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 오비맥주
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer14.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">UF오트에일</h3>
+                  <span class="price">￦2200원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 6.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 생극양조
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer15.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">인디안블론드</h3>
+                  <span class="price">￦1250원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 자파브루어리
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer16.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">카스 라이트</h3>
+                  <span class="price">￦1700원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 4%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 오비맥주
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer17.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">UF싱글몬트</h3>
+                  <span class="price">￦16000원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 5.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 생극양조
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+            <li class="item">
+              <div class="front">
+                <img
+                  src="./src/img/beer18.png"
+                  class="alcohol_img"
+                  alt="맥주"
+                />
+                <button class="add_cart">ADD CART</button>
+                <div class="like_btn">
+                  <i class="fa-solid fa-heart fill_heart hide"></i>
+                  <i class="fa-regular fa-heart empty_heart"></i>
+                </div>
+                <div class="text">
+                  <h3 class="title">UF앰버에일</h3>
+                  <span class="price">￦1520원</span>
+                  <span class="detail">상세정보</span>
+                </div>
+              </div>
+              <div class="back">
+                <p class="description">
+                  스타일: 국산 맥주<br />
+                  도수: 5.5%<br />
+                  국가/지역: 대한민국<br />
+                  제조사: 생극양조
+                </p>
+                <i class="fa-solid fa-xmark cancel"></i>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ALCOHOL VIDEO -->
+        <section class="alcohol_video">
+          <video
+            src="./src/video/mak_video3.mp4"
+            loop
+            autoplay
+            muted
+            class="full_video"
+          ></video>
+          <video
+            src="./src/video/mak_movie2.mp4"
+            class="video2"
+            loop
+            muted
+            autoplay
+          ></video>
+          <video
+            src="./src/video/mak_movie4.mp4"
+            class="video3"
+            loop
+            muted
+            autoplay
+          ></video>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
