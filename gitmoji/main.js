@@ -1,1 +1,1 @@
-console.log('hello, gitmoji!');
+console.log('hello, gitmoji! :)');
